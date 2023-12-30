@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>netstandard2.0</TargetFramework>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<LangVersion>latest</LangVersion>
+		<Version>1.0.0-alpha19</Version>
+		<Authors>SVRGN.eu</Authors>
+		<Copyright>2023 SVRGN.eu</Copyright>
+		<Description>Interface for messageing services used by SVRGN service implementations.</Description>
+		<PackageReleaseNotes>Made including the sender of the message as receiver optional - also enhanced ITopic</PackageReleaseNotes>
+		<PackageTags>Services;Interfaces;SVRGN;Message;Topic;Messaging;</PackageTags>
+		<PackageProjectUrl>https://SVRGN.eu</PackageProjectUrl>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Include="..\..\README.md">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+	</ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SVRGN.Libs.Contracts.Base\SVRGN.Libs.Contracts.Base.csproj" />
+    <ProjectReference Include="..\SVRGN.Libs.Contracts.Service.Base\SVRGN.Libs.Contracts.Service.Base.csproj" />
+  </ItemGroup>
+
+</Project>
