@@ -4,7 +4,7 @@
 		<TargetFramework>netstandard2.0</TargetFramework>
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 		<LangVersion>latest</LangVersion>
-		<Version>1.0.0-alpha19</Version>
+		<Version>1.0.0-beta01</Version>
 		<Authors>SVRGN.eu</Authors>
 		<Copyright>2023 SVRGN.eu</Copyright>
 		<Description>Interface for messageing services used by SVRGN service implementations.</Description>
@@ -21,9 +21,9 @@
 		</None>
 	</ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\SVRGN.Libs.Contracts.Base\SVRGN.Libs.Contracts.Base.csproj" />
-    <ProjectReference Include="..\SVRGN.Libs.Contracts.Service.Base\SVRGN.Libs.Contracts.Service.Base.csproj" />
-  </ItemGroup>
+	<ItemGroup>
+	  <PackageReference Include="SVRGN.Libs.Contracts.Base" Version="1.0.0-alpha19" />
+	  <PackageReference Include="SVRGN.Libs.Contracts.Service.Base" Version="1.0.0-beta01" />
+	</ItemGroup>
 
 </Project>
