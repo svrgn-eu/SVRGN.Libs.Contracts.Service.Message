@@ -8,10 +8,6 @@ namespace SVRGN.Libs.Contracts.Service.Message
 {
     public interface IMessageReceiver : IBaseObject, IId
     {
-        #region Properties
-
-        #endregion Properties
-
         #region Methods
 
         bool Receive(IMessage Message);

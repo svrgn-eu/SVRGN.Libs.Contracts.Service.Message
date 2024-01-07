@@ -7,10 +7,6 @@ namespace SVRGN.Libs.Contracts.Service.Message
 {
     public interface IMessageSender : IBaseObject, IId
     {
-        #region Properties
-
-        #endregion Properties
-
         #region Methods
 
         #region Send: Sends a message.
